@@ -18,27 +18,10 @@
 </head>
 
 <body class="box-border">
-    <header class="bg-slate-100 hidden pb-20 mb-5 border-4">
-        <nav class="container mx-auto">
+    <header class="bg-slate-100 pb-20 mb-5 border-4 px-4 lg:px-0">
+        <nav class="container mx-auto hidden">
             <div class="navbar">
                 <div class="navbar-start">
-                    <!-- <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>Blogs</a></li>
-                            <li><a>Contact Us</a></li>
-                        </ul>
-                    </div> -->
                     <div class="flex items-center">
                         <div class="bg-[#ABEF5F] rounded-full px-2 py-1 ">
                             <i class="fa-solid fa-arrow-right -rotate-45"></i>
@@ -90,19 +73,19 @@
         </nav>
         <!-- banner part -->
         <section>
-            <div class="flex justify-center">
+            <div class="flex justify-center p-5 lg:p-0">
                 <div class="text-center flex flex-col items-center">
                     <div>
                         <img src="./assets/banner.png" alt="">
                     </div>
                     <div class="max-w-4xl">
-                        <h1 class="text-6xl font-bold">A barn house of this design has a striking appearance</h1>
+                        <h1 class="text-4xl lg:text-6xl font-bold">A barn house of this design has a striking appearance</h1>
                         <p class="py-6">
                             The barn house captivates with its blend of rustic charm and modern sophistication,
                             featuring weathered wood, sleek metal accents, and large windows that flood the space with
                             natural light.
                         </p>
-                        <button class="btn bg-[#c7f88f] rounded-full mx-auto">
+                        <button class="btn bg-[#c7f88f] rounded-full mx-auto w-full lg:w-auto">
                             <a class="font-bold">View Details</a>
                             <div class="bg-[#ABEF5F] rounded-full p-2 ">
                                 <i class="fa-solid fa-arrow-right -rotate-45"></i>
@@ -245,7 +228,7 @@
             </div>
         </section>
         <!-- next project section  -->
-        <section class="py-8 lg:py-20 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
+        <section class="py-8 lg:py-20 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover mb-5">
             <div class="container p-5 lg:p-0 mx-auto space-y-8">
                 <div class="text-center">
                     <button class="bg-white px-3 rounded-full">
@@ -269,17 +252,25 @@
                     <div>
                         <input class="w-full p-5 rounded-full" type="email" placeholder="Email Number*">
                     </div>
-                    <div class="col-span-1 lg:col-span-2">
+                    <div class="col-span-1 md:col-span-2">
                         <textarea class="w-full h-56 p-5 rounded-3xl" name="" id="" cols="30"
                             placeholder="Write your message here:"></textarea>
                         <!-- <input class="w-full h-96" type="text"> -->
                     </div>
                 </div>
+                <div>
+                    <button class="btn bg-[#ABEF5F] rounded-full w-full">
+                        <a class="text-xl font-bold">Send Email</a>
+                        <div class="bg-black rounded-full p-2 ">
+                            <i class="fa-solid fa-arrow-right text-white -rotate-45"></i>
+                        </div>
+                    </button>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="bg-[#1C1C1C] py-20 hidden">
-        <div class="container mx-auto flex flex-col items-center space-y-5">
+    <footer class="bg-[#1C1C1C] py-8 lg:py-20">
+        <div class="container mx-auto p-5 lg:p-0 flex flex-col items-center space-y-5">
             <div class="flex items-center">
                 <div class="bg-[#ABEF5F] rounded-full px-2 py-1 ">
                     <i class="fa-solid fa-arrow-right -rotate-45"></i>
@@ -289,7 +280,7 @@
             <p class="text-white max-w-2xl text-center">The barn house captivates with its blend of rustic charm and
                 modern sophistication, featuring weathered wood, sleek metal accents.</p>
             <div class="text-white py-5">
-                <ul class="grid grid-cols-1 md:grid-cols-5 px-1">
+                <ul class="grid grid-cols-1 text-center space-y-4 md:space-y-0 md:grid-cols-5">
                     <li><a>Home</a></li>
                     <li><a>Services</a></li>
                     <li><a>Portfolio</a></li>
@@ -297,8 +288,8 @@
                     <li><a>Contact Us</a></li>
                 </ul>
             </div>
-            <div class="">
-                <button class="btn bg-[#ABEF5F] rounded-full hidden md:flex">
+            <div>
+                <button class="btn bg-[#ABEF5F] rounded-full w-full">
                     <a>Book Consult</a>
                     <div class="bg-black rounded-full p-2 ">
                         <i class="fa-solid fa-arrow-right text-white -rotate-45"></i>
