@@ -15,13 +15,28 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/8da0e75a17.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        'manrope': ["Manrope", 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body class="box-border">
-    <header class="bg-slate-100 pb-20 box-border mb-5 border-4 px-4 lg:px-0">
-        <nav class="container mx-auto">
-            <div class="navbar">
-                <div class="navbar-start">
+<body class="box-border font-manrope">
+    <header class="bg-slate-100 pb-20 box-border mb-5 px-4 lg:px-0">
+        <nav class="container mx-auto box-border py-5">
+            <div class="flex justify-between items-center">
+                <div class="flex">
                     <div class="flex items-center">
                         <div class="bg-[#ABEF5F] rounded-full px-2 py-1 ">
                             <i class="fa-solid fa-arrow-right -rotate-45"></i>
@@ -29,7 +44,7 @@
                         <a class="btn btn-ghost text-2xl md:text-4xl font-bold">Rinterio</a>
                     </div>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class=" hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
                         <li><a>Services</a></li>
@@ -38,41 +53,50 @@
                         <li><a>Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end space-x-5">
-                    <div class=" bg-white p-2 rounded-full hidden md:flex">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <div class="bg-white border-1 border-dashed p-2 rounded-full hidden md:flex">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                    <button class="btn bg-[#ABEF5F] rounded-full hidden md:flex">
-                        <a>Book Consult</a>
-                        <div class="bg-black rounded-full p-2 ">
-                            <i class="fa-solid fa-arrow-right text-white -rotate-45"></i>
+                <div class="flex">
+                    <!-- <a class="btn">Button</a> -->
+                    <div class="flex items-center gap-4">
+                        <div class=" bg-white p-2 rounded-full hidden md:flex">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
-                    </button>
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+                        <div class="bg-white border-1 border-dashed p-2 rounded-full hidden md:flex">
+                            <i class="fa-solid fa-cart-shopping"></i>
                         </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>Blogs</a></li>
-                            <li><a>Contact Us</a></li>
-                        </ul>
+                        <div>
+                            <button class="btn bg-[#ABEF5F] rounded-full hidden md:flex">
+                                <a>Book Consult</a>
+                                <div class="bg-black rounded-full p-2 ">
+                                    <i class="fa-solid fa-arrow-right text-white -rotate-45"></i>
+                                </div>
+                            </button>
+                            
+                        </div>
+                        <div>
+                            <div class="dropdown w-full ">
+                                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 6h16M4 12h8m-8 6h16" />
+                                    </svg>
+                                </div>
+                                <!-- <ul tabindex="0"
+                                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] shadow">
+                                    <li><a>Home</a></li>
+                                    <li><a>Services</a></li>
+                                    <li><a>Portfolio</a></li>
+                                    <li><a>Blogs</a></li>
+                                    <li><a>Contact Us</a></li>
+                                </ul> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </nav>
         <!-- banner part -->
-        <section>
+        <section class="">
             <div class="flex justify-center p-5 lg:p-0">
                 <div class="text-center flex flex-col items-center">
                     <div>
@@ -109,7 +133,7 @@
                         </button>
                     </div>
                     <div class="space-y-5">
-                        <h1 class="text-3xl lg:text-4xl font-bold max-w-sm text-center lg:text-left">We design
+                        <h1 class="text-3xl lg:text-4xl font-bold max-w-md text-center lg:text-left">We design
                             thoughtful, liveable spaces</h1>
                         <p>The barn house captivates with its blend of rustic charm and
                             modern sophistication, featuring weathered wood, sleek metal accents.</p>
@@ -266,7 +290,8 @@
                                 <h6 class="text-xl font-bold">Sara Kristian</h6>
                             </div>
                         </div>
-                        <p>"Great website with a wide range of design ideas. Easy to navigate, and the tools are very helpful. Perfect for anyone planning a home makeover."</p>
+                        <p>"Great website with a wide range of design ideas. Easy to navigate, and the tools are very
+                            helpful. Perfect for anyone planning a home makeover."</p>
                         <!-- xs -->
                         <div class="rating rating-xs">
                             <input type="radio" name="rating-5" class="mask mask-star-2 bg-gray-400" />
@@ -286,7 +311,8 @@
                                 <h6 class="text-xl font-bold">Donaki Pakura</h6>
                             </div>
                         </div>
-                        <p>"Impressive site! Loved the intuitive interface and quality images. It made home design fun and straightforward. A must-visit for anyone redoing their space."</p>
+                        <p>"Impressive site! Loved the intuitive interface and quality images. It made home design fun
+                            and straightforward. A must-visit for anyone redoing their space."</p>
                         <!-- xs -->
                         <div class="rating rating-xs">
                             <input type="radio" name="rating-5" class="mask mask-star-2 bg-gray-400" />
@@ -296,7 +322,7 @@
                             <input type="radio" name="rating-5" class="mask mask-star-2 bg-gray-400" />
                         </div>
                     </div>
-                        
+
                 </div>
             </div>
         </section>
